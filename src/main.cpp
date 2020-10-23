@@ -73,7 +73,7 @@ String sendData()
   String values = "{\"value1\":\"" + temperature + "\",\"value2\":\"" + humidity + "\",\"value3\":\"" + dateTime + "\"}";
 
   HTTPClient http;
-  http.begin("http://maker.ifttt.com/trigger/dados/with/key/k5bq9RP7lhyBoNLlGZNE3");
+  http.begin("http://maker.ifttt.com/trigger/dados/with/key/");
   http.addHeader("Content-Type", "application/json");
   int httpCode = http.POST(values);
 
